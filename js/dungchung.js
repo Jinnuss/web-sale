@@ -193,7 +193,7 @@ function logIn(form) {
     // Kiểm tra xem dữ liệu form có khớp với người dùng nào trong danh sách ko
     for (var u of listUser) {
         if (equalUser(newUser, u)) {
-            if(u.off) {
+            if (u.off) {
                 alert('Tài khoản này đang bị khoá. Không thể đăng nhập.');
                 return false;
             }
@@ -509,10 +509,10 @@ function addTags(nameTag, link) {
 
 // Thêm sản phẩm vào trang
 function addProduct(p, ele, returnString) {
-	promo = new Promo(p.promo.name, p.promo.value); // class Promo
-	product = new Product(p.masp, p.name, p.img, p.price, p.star, p.rateCount, promo); // Class product
+    promo = new Promo(p.promo.name, p.promo.value); // class Promo
+    product = new Product(p.masp, p.name, p.img, p.price, p.star, p.rateCount, promo); // Class product
 
-	return addToWeb(product, ele, returnString);
+    return addToWeb(product, ele, returnString);
 }
 
 // Thêm topnav vào trang
@@ -606,8 +606,8 @@ function addFooter() {
 
     <!-- ============== Footer ============= -->
     <div class="copy-right">
-        <p><a href="index.html">LDD Phone Store</a> - All rights reserved © 2021 - Designed by
-            <span style="color: #eee; font-weight: bold">group 15th</span></p>
+        <p><a href="index.html">LDD Phone Store</a> - All rights reserved © 2024 - Designed by
+            <span style="color: #eee; font-weight: bold">group Trung</span></p>
     </div>`);
 }
 
@@ -724,7 +724,7 @@ function addPlc() {
 
 // https://stackoverflow.com/a/2450976/11898496
 function shuffleArray(array) {
-    let currentIndex = array.length,  randomIndex;
+    let currentIndex = array.length, randomIndex;
 
     // While there remain elements to shuffle...
     while (currentIndex != 0) {
@@ -735,7 +735,7 @@ function shuffleArray(array) {
 
         // And swap it with the current element.
         [array[currentIndex], array[randomIndex]] = [
-        array[randomIndex], array[currentIndex]];
+            array[randomIndex], array[currentIndex]];
     }
 
     return array;
